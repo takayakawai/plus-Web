@@ -9,7 +9,11 @@ body{
     min-width:400px;
     font-family: 'Noto Sans JP', "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ"," Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     color:#555;
+}
 
+a{
+    text-decoration: none;
+    color:white;
 }
 
 .header{
@@ -46,6 +50,7 @@ body{
     list-style: none;
     margin:0;
 }
+
 
 .container-right li{
     margin-left:20px;
