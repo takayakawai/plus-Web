@@ -1,17 +1,32 @@
+:root{
+    --my-color:#191970;
+}
+
 body{
-    margin:0;
+    margin:0 auto;
     padding:0;
     font-size:14px;
     min-width:400px;
     font-family: 'Noto Sans JP', "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ"," Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color:#555;
+
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:var(--my-color);
+    padding:10px 0;
+    color:white;
 
 }
 
 .container{
-    background-color: gray;
+    max-width:600px;
+    margin:0 auto;
     display:flex;
-    padding:10px 30px;
-    color:white;
     justify-content: space-between;
     white-space: nowrap;
 }
@@ -37,9 +52,13 @@ body{
 }
 
 .key-visual{
-    background-color:#333;
+    background-image:url(img/1494649_l.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     margin:0;
-    height:200px;
+    padding-top:30px;
+    height:300px;
     font-size:20px;
     display: -webkit-flex;
     display: flex;
@@ -50,17 +69,27 @@ body{
     color:white;
 }
 
+.key-visual h1{
+    font-size:20px;
+    color:var(--my-color);
+    background-color: white;
+    padding:0 0.4em;
+}
+
 .main{
     padding:30px;
+    max-width:600px;
     text-align: justify;
+    margin:0 auto;
 }
 
 .heading{
     margin:50px 0 10px 0;
+    line-height:40px;
     font-size:18px;
     font-weight: bold;
     color:#333;
-    border-left: 2px solid gray;
+    border-left: 3px solid var(--my-color);
     padding-left:10px;
 }
 
@@ -74,7 +103,7 @@ body{
 }
 
 .image{
-    height:150px;
+    height:200px;
     margin-top:10px;
     background-color: gray;
     color:white;
